@@ -3,13 +3,14 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './components/About/About';
 import Header from './components/Header/Header';
-import Inventory from './components/Inventory/Inventory';
+import Inventory from './components/Help/Help';
 import Login from './components/Login/Login';
-import Orders from './components/Orders/Orders';
+import Orders from './Model/Orders';
 import RequireAuth from './components/RequireAuth/RequireAuth';
 import Shipment from './components/Shipment/Shipment';
 import Shop from './components/Shop/Shop';
 import Signup from './components/Signup/Signup';
+import Help from './components/Help/Help';
 
 function App() {
   return (
@@ -19,9 +20,9 @@ function App() {
         <Route path='/' element={<Shop></Shop>}></Route>
         <Route path='/shop' element={<Shop></Shop>}></Route>
         <Route path='/orders' element={<Orders></Orders>}></Route>
-        <Route path='/inventory' element={
+        <Route path='/help' element={
           <RequireAuth>
-            <Inventory></Inventory>
+            <Help></Help>
           </RequireAuth>
         }></Route>
         <Route path="/shipment" element={

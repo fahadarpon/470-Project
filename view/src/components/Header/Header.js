@@ -16,13 +16,14 @@ const Header = () => {
         <nav className='header'>
             <img src={logo} alt="" />
             <div>
+                <input type="text" name="search" placeholder='search'/>
                 <Link to="/shop">Shop</Link>
                 <Link to="/orders">Orders</Link>
-                <Link to="/inventory">Inventory</Link>
+                <Link to="/help">Help?</Link>
                 <Link to="/about">About</Link>
                 {
                     user ?
-                    <button onClick={handleSignOut}>Sign out</button>
+                    <button style={{margin:"20px"}} onClick={handleSignOut}>Sign out</button>
                     :
                     <Link to="/login">Login</Link>}
                 

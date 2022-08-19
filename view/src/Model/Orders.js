@@ -1,11 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import useCart from '../../hooks/useCart';
-import useProducts from '../../hooks/useProducts';
-import { removeFromDb } from '../../utilities/fakedb';
-import Cart from '../Cart/Cart';
-import ReviewItem from '../ReviewItem/ReviewItem';
-import './Orders.css';
+import useCart from '../hooks/useCart';
+import useProducts from '../hooks/useProducts';
+import { removeFromDb } from '../utilities/fakedb';
+import Cart from './Cart';
+import ReviewItem from '../components/ReviewItem/ReviewItem';
+import '../components/Orders Css/Orders.css'
 
 const Orders = () => {
     const [products, setProducts] = useProducts();
