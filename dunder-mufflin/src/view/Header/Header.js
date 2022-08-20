@@ -2,7 +2,7 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
-import logo from '../../images/Logo.svg';
+// import logo from '../../images/Logo.svg';
 import './Header.css';
 import { signOut } from 'firebase/auth';
 
@@ -14,7 +14,8 @@ const Header = () => {
     }
     return (
         <nav className='header'>
-            <img src={logo} alt="" />
+            {/* <img src={logo} alt="" /> */}
+            <h2 id='forlogo'>Dunder Mufflin</h2>
             <div>
                 <input type="text" name="search" placeholder='search'/>
                 <Link to="/shop">Shop</Link>
