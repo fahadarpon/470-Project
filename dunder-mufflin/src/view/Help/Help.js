@@ -16,7 +16,7 @@ const Help = () => {
             <tr>
     <td>Company</td>
     <td>Orders below 400</td>
-    <td>Orders avobe 400</td>
+    <td>Orders above 400</td>
   </tr>
   <tr>
     <td>Dhaka</td>
